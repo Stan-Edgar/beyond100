@@ -4,6 +4,7 @@ import './index.css'
 import Nav from './navbar.jsx'
 import Hero from "./hero.jsx";
 import Slider from "./slider.jsx"
+import Pricing from "./pricing.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <Nav />
     <Hero />
     <Slider />
+    <Pricing />
     
   </StrictMode>,
 )
