@@ -6,23 +6,25 @@ import icons from "./icons.js";
 export default function Pricing() {
     return (
         <>
-         <h1>
+        <div>
+
+            <h1>
             <span>No Surprises,</span>
             <span>Transparent Pricing</span>
-        </h1>
+            </h1>
         
-        <div>
-           <div>
-            <h2>Website Design</h2>
-            <h1>$1,499</h1>
-            <div>launch your dream website in just days, not months.</div>
-            <div></div>
-
             <div>
                 <div>
-                    <img src={icons.fileAmnt} width="17" height="17" alt="file icon" />
-                    <p>6 Pages</p>
-                </div>
+                    <h2>Website Design</h2>
+                    <h1>$1,499</h1>
+                    <div>launch your dream website in just days, not months.</div>
+                    <div></div>
+
+                <div>
+                    <div>
+                        <img src={icons.fileAmnt} width="17" height="17" alt="file icon" />
+                        <p>6 Pages</p>
+                    </div>
                 <div>
                     <img src={icons.customerObs} width="17" height="17" alt="customer icon" />
                     <p>Customer obsessed approach</p>
@@ -84,7 +86,10 @@ export default function Pricing() {
 
             <div>Book a call</div>
            </div>
+            </div>
+
         </div>
+         
         
 
         </>
