@@ -6,12 +6,12 @@ export default function Nav() {
     <div className="flex justify-between w-[1190px] h-[56px] mx-auto px-6">
       <div className="flex items-center gap-x-10">
         <img src={Logo} alt="Beyond100 Logo" className="h-10" />
-        <nav className="flex gap-x-6">
-          <a href="">Home</a>
+        <div className="flex gap-x-6 font-manrope">
+          <a href="" className='font-manrope'>Home</a>
           <a href="">Portfolio</a>
           <a href="">FAQ</a>
           <a href="">Pricing</a>
-        </nav>
+        </div>
       </div>
       
       <div>

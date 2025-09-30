@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}" // all JS/TS/React files
   ],
   theme: {
-    extend: {},
+  extend: {
+    fontFamily: {
+      satoshi: ['Satoshi', 'sans-serif'],
+      manrope: ['Manrope', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
