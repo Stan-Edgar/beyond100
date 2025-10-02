@@ -13,79 +13,78 @@ export default function Pricing() {
             <span>Transparent Pricing</span>
             </h1>
         
-            <div className="flex gap-6">
-                <div className="w-[380px] h-[460px] pl-8 pt-5 bg-[linear-gradient(180deg,#141720_0%,#0E0F14_100%)] outline outline-[4px] outline-[#813FF4] outline-offset-[0px] m-1 rounded-[20px]">
-                    <h2 className='text-[1.50rem] tracking-tight font-medium text-[#FFFFFFA6]'>Website Design</h2>
-                    <h1 className="font-satoshi text-[3rem] text-white font-bold tracking-tight mb-2">$1,499</h1>
-                    <div className="flex justify-center w-[19.125rem] text-white text-[0.75rem] bg-[#A26CFF80] py-1 rounded-md border border-[#813FF4]">launch your dream website in just days, not months.</div>
-                    <div className="w-[20rem] border-t border-white/10 mt-4"></div>
+            <div className="flex gap-6 font-manrope">
+                <div className="w-[380px] h-[486px] pl-[1.25rem] pt-5 bg-[linear-gradient(180deg,#141720_0%,#0E0F14_100%)] outline outline-[4px] outline-[#813FF4] outline-offset-[0px] m-1 rounded-[20px]">
+                    <h2 className='text-[1.50rem] tracking-tight font-medium text-[#FFFFFFA6] ml-3'>Website Design</h2>
+                    <h1 className="font-satoshi text-[3rem] text-white font-bold tracking-tight ml-3 mb-2">$1,499</h1>
+                    <div className="flex justify-center w-[19.125rem] text-white text-[0.75rem] bg-[#A26CFF80] ml-3 py-1 rounded-md border border-[#813FF4]">launch your dream website in just days, not months.</div>
+                    <div className="w-[20rem] border-t border-white/10 mt-4 mb-5"></div>
 
-                    <div>
-                    <div>
-                        <img src={icons.fileAmnt} width="17" height="17" alt="file icon" />
+                    <div className="flex flex-col gap-1.5 font-manrope text-white/85 pl-3">
+                    <div className="flex gap-1.5">
+                        <img src={icons.fileAmnt} width="20" height="20" alt="file icon" />
                         <p>6 Pages</p>
                     </div>
-                <div>
-                    <img src={icons.customerObs} width="17" height="17" alt="customer icon" />
+                <div className="flex gap-1.5">
+                    <img src={icons.customerObs} width="20" height="20" alt="customer icon" />
                     <p>Customer obsessed approach</p>
                 </div>
-                <div>
-                    <img src={icons.revisions} width="17" height="17" alt="revisions icon" />
+                <div className="flex gap-1.5">
+                    <img src={icons.revisions} width="20" height="20" alt="revisions icon" />
                     <p>Unlimited revisions</p>
                 </div>
-                <div>
-                    <img src={icons.coin} width="17" height="17" alt="Conversion icon" />
+                <div className="flex gap-1.5">
+                    <img src={icons.coin} width="20" height="20" alt="Conversion icon" />
                     <p>Conversion-driven</p>
                 </div>
-                <div>
-                    <img src={icons.dev} width="17" height="17" alt="dev icon" />
+                <div className="flex gap-1.5">
+                    <img src={icons.dev} width="20" height="20" alt="dev icon" />
                     <p>Custom development</p>
                 </div>
-                <div>
-                    <img src={icons.handCollab} width="17" height="17" alt="collab icon" />
+                <div className="flex gap-1.5">
+                    <img src={icons.handCollab} width="20" height="20" alt="collab icon" />
                     <p>Collaborative process</p>
                 </div>
                     </div>
 
-                    <div>Book a call</div>
-           </div>
-
-
-            <div>
-                <h2>Enterprise</h2>
-                <h1>Custom Quote</h1>
-                <div>Big brands with big ideas need elite design support.</div>
-                <div></div>
-
-                <div>
-                    <div>
-                        <img src={icons.multiplePages} width="17" height="17" alt="files icon" />
-                        <p>Multiple site pages</p>
-                    </div>
-                    <div>
-                        <img src={icons.team} width="17" height="17" alt="Team icon" />
-                        <p>Team collaboration</p>
-                    </div>
-                    <div>
-                        <img src={icons.priority} width="17" height="17" alt="Priority icon" />
-                        <p>Priority support</p>
-                    </div>
-                    <div>
-                        <img src={icons.branding} width="17" height="17" alt="Branding plus Logo icon" />
-                        <p>Branding + Logo</p>
-                    </div>
-                    <div>
-                        <img src={icons.quickDelivery} width="17" height="17" alt="Quick delivery icon" />
-                        <p>Quick Delivery</p>
-                    </div>
-                    <div>
-                        <img src={icons.projectManage} width="17" height="17" alt="Project Management icon" />
-                        <p>Expert project management</p>
+                    <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer">Book a call</div>
                 </div>
-            </div>
 
-            <div>Book a call</div>
-           </div>
+                <div className="w-[380px] h-[486px] pl-[1.25rem] pt-5 bg-white outline outline-[4px] outline-black/10 outline-offset-4 m-1 rounded-[20px]">
+                    <h2 className='text-[1.50rem] tracking-tight font-medium text-black/65 ml-3'>Enterprise</h2>
+                    <h1 className="font-satoshi text-[3rem] text-black font-bold tracking-tight ml-3 mb-2">Custom Quote</h1>
+                    <div className="flex justify-center w-[19.125rem] text-black/85 text-[0.75rem] bg-[#D7D7DB80] ml-3 py-1 rounded-md border border-[#D7D7DB]">Big brands with big ideas need elite design support.</div>
+                    <div className="w-[20rem] border-t border-black/10 mt-4 mb-5"></div>
+
+                    <div className="flex flex-col gap-1.5 font-manrope pl-3 text-black/85">
+                        <div className="flex gap-1.5">
+                            <img src={icons.multiplePages} width="20" height="20" alt="files icon" />
+                            <p>Multiple site pages</p>
+                        </div>
+                        <div className="flex gap-1.5">
+                            <img src={icons.team} width="20" height="20" alt="Team icon" />
+                            <p>Team collaboration</p>
+                        </div>
+                        <div className="flex gap-1.5">
+                            <img src={icons.priority} width="20" height="20" alt="Priority icon" />
+                            <p>Priority support</p>
+                        </div>
+                        <div className="flex gap-1.5">
+                            <img src={icons.branding} width="20" height="20" alt="Branding plus Logo icon" />
+                            <p>Branding + Logo</p>
+                        </div>
+                        <div className="flex gap-1.5">
+                            <img src={icons.quickDelivery} width="20" height="20" alt="Quick delivery icon" />
+                            <p>Quick Delivery</p>
+                        </div>
+                        <div className="flex gap-1.5">
+                            <img src={icons.projectManage} width="20" height="20" alt="Project Management icon" />
+                            <p>Expert project management</p>
+                    </div>
+                </div>
+
+                <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-black text-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer">Book a call</div>
+                </div>
             </div>
 
         </div>
