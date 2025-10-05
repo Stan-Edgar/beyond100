@@ -47,7 +47,7 @@ export default function Pricing() {
                 </div>
                     </div>
 
-                    <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer">Book a call</div>
+                    <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer"><a href="https://calendly.com/thestanedgar/15mins" target='_blank'>Book a call</a></div>
                 </div>
 
                 <div className="w-[380px] h-[486px] pl-[1.25rem] pt-5 bg-white outline outline-[4px] outline-black/10 outline-offset-4 m-1 rounded-[20px]">
@@ -83,7 +83,7 @@ export default function Pricing() {
                     </div>
                 </div>
 
-                <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-black text-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer">Book a call</div>
+                <div className="w-[21.375rem] h-[3rem] mt-[3.25rem] bg-black text-white flex justify-center items-center rounded-xl font-satoshi text-[1.5rem] font-medium cursor-pointer"><a href="https://calendly.com/thestanedgar/15mins" target='_blank'>Book a call</a></div>
                 </div>
             </div>
 

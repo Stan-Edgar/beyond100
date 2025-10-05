@@ -15,7 +15,7 @@ export default function Nav() {
       </div>
       
       <div className="px-5 py-2 bg-[#813FF4] h-[2.6875rem] text-white font-semibold rounded-xl text-[1.125rem] cursor-pointer">
-          Book a call
+          <a href="https://calendly.com/thestanedgar/15mins" target='_blank'>Book a call</a>
         </div>
 
     </div>

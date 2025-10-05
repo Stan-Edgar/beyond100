@@ -6,7 +6,7 @@ const plus = 'w-11 h-11 bg-[#EAEAEC] rounded-full flex items-center justify-cent
 const wrap = 'flex justify-between items-center w-full h-[4.25rem] pl-[2rem] pr-4 cursor-pointer';
 
 const questions = [
-  { q: "How long does it take?", a: "Most projects take 2-3 weeks depending on scope." },
+  { q: "How long does it take?", a: "Most projects take 2-3 weeks depending on the scope of the project." },
   { q: "How do I get started?", a: "Simply book a call and we'll guide you through the onboarding process." },
   { q: "How does payment work?", a: "We accept 50% upfront and 50% when the project is completed." },
   { q: "Do you offer ongoing support?", a: "Yes, we have flexible support & keep in touch with our clients." },
