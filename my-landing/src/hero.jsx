@@ -1,6 +1,8 @@
 import React from 'react';
 import icons from "./icons.js";
 
+const benefit = 'flex justify-center text-sm text-[#868892] font-medium items-center px-4 py-[0.4rem] gap-[10px] bg-white border border-[#D7D7DB] rounded-lg';
+
 export default function Hero() {
     return (
         <div className='flex flex-col items-center mt-[6.25rem] mb-[3rem] mx-auto'>
@@ -27,9 +29,9 @@ export default function Hero() {
             </div>
 
             <div className='font-manrope flex gap-6'>
-              <div className='flex justify-center text-sm text-[#868892] font-medium items-center px-4 py-[0.4rem] gap-[10px] bg-white border border-[#D7D7DB] rounded-lg'>Conversion-driven sites</div>
-              <div className='flex justify-center text-sm text-[#868892] font-medium items-center px-4 py-[0.4rem] gap-[10px] bg-white border border-[#D7D7DB] rounded-lg'>Fast delivery</div>
-              <div className='flex justify-center text-sm text-[#868892] font-medium items-center px-4 py-[0.4rem] gap-[10px] bg-white border border-[#D7D7DB] rounded-lg'>Design + Development</div>
+              <div className={benefit}>Conversion-driven sites</div>
+              <div className={benefit}>Fast delivery</div>
+              <div className={benefit}>Design + Development</div>
             </div>
         
         </div>
