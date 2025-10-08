@@ -8,12 +8,12 @@ export default function Pricing() {
         <>
         <div className='flex flex-col items-center mt-10 mb-24 font-manrope gap-10 '>
 
-            <h1 className='text-[3.375rem] tracking-[-0.20rem] flex flex-col text-center  leading-[1.1] font-bold'>
+            <h1 className='text-[2.525rem] sm:text-[3.375rem] tracking-[-0.20rem] flex flex-col text-center  leading-[1.1] font-bold'>
             <span>No Surprises,</span>
             <span>Transparent Pricing</span>
             </h1>
         
-            <div className="flex gap-6 font-manrope">
+            <div className="flex flex-col sm:flex-row gap-6 font-manrope">
                 <div className="w-[380px] h-[486px] pl-[1.25rem] pt-5 bg-[linear-gradient(180deg,#141720_0%,#0E0F14_100%)] outline outline-[4px] outline-[#813FF4] outline-offset-[0px] m-1 rounded-[20px]">
                     <h2 className='text-[1.50rem] tracking-tight font-medium text-[#FFFFFFA6] ml-3'>Website Design</h2>
                     <h1 className="font-satoshi text-[3rem] text-white font-bold tracking-tight ml-3 mb-2">$1,499</h1>
