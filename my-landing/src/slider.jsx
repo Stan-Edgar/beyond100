@@ -12,7 +12,7 @@ export default function Slider({ isPortfolio }) {
         key={i}
         src={src}
         alt={`slide-${i + 1}`}
-        className="flex-shrink-0 w-[550px] sm:w-[800px] h-[350px] sm:h-[600px] object-fit rounded-2xl"
+        className="flex-shrink-0 w-[400px] sm:w-[800px] h-[300px] sm:h-[600px] object-fit rounded-2xl"
       />
     ))}
   </div>

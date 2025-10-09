@@ -3,7 +3,7 @@ import Logo from './assets/Logo100.png';
 
 export default function Nav() {
   return (
-    <div className="flex justify-between items-center max-w-[1190px] h-[56px] mx-auto my-8 px-6 sm:px-10 md:px-6">
+    <div className="flex justify-between items-center max-w-[1190px] h-[56px] mx-auto my-8 px-6 sm:px-10 md:px-6 pt-3 sm:pt-0">
       {/* Left side */}
       <div className="flex items-center gap-x-10">
         <a href="">
