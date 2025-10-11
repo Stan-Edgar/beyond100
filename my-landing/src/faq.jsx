@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import icons from "./icons.js";
 
-const q = 'flex flex-col w-[23.75rem] sm:w-[38.25rem] bg-white border-2 border-[#F0F2F9] rounded-xl text-[1.125rem]';
+const q = 'flex flex-col w-[23.75rem] sm:w-[38.25rem] bg-white border-2 border-[#EAEAEC] rounded-xl text-[1.125rem]';
 const plus = 'w-11 h-11 bg-[#EAEAEC] rounded-full flex items-center justify-center';
 const wrap = 'flex justify-between items-center w-full h-[4.25rem] pl-[2rem] pr-4 cursor-pointer';
 
@@ -23,7 +23,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="flex flex-col items-center bg-black py-12 text-white gap-16 font-manrope">
+    <div className="flex flex-col items-center py-12 gap-16 font-manrope">
       <h2 className="text-[2.525rem] sm:text-[3.375rem] tracking-[-0.20rem] text-center leading-[1.1] font-bold">
         Let's answer <br /> your questions
       </h2>
