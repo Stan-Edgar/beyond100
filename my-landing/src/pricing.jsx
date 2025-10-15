@@ -6,7 +6,7 @@ import icons from "./icons.js";
 export default function Pricing() {
     return (
         <>
-        <div className='flex flex-col items-center mt-10 mb-24 font-manrope gap-10 '>
+        <div className='flex flex-col items-center mt-10 mb-[4.2rem] font-manrope gap-10 '>
 
             <h1 className='text-[2.525rem] sm:text-[3.375rem] tracking-[-0.20rem] flex flex-col text-center  leading-[1.1] font-bold'>
             <span>No Surprises,</span>
