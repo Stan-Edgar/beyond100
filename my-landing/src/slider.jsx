@@ -33,10 +33,21 @@ export default function Slider({ isPortfolio = false, speed = 200 }) {
     return () => window.removeEventListener("resize", measure);
   }, []);
 
-  // Continuous animation
+  // Continuous animation — but absolutely stop if isPortfolio
   useEffect(() => {
-    if (isPortfolio) return; // stop animating
+    // If portfolio: ensure any RAF is canceled, reset offset and transform
+    if (isPortfolio) {
+      if (rafRef.current) {
+        cancelAnimationFrame(rafRef.current);
+        rafRef.current = null;
+      }
+      lastTime.current = null;
+      offsetRef.current = 0;
+      if (trackRef.current) trackRef.current.style.transform = "none";
+      return;
+    }
 
+    // Otherwise run the animation
     const step = (time) => {
       if (!lastTime.current) lastTime.current = time;
       const dt = (time - lastTime.current) / 1000;
@@ -57,18 +68,23 @@ export default function Slider({ isPortfolio = false, speed = 200 }) {
     };
 
     rafRef.current = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(rafRef.current);
+    return () => {
+      if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    };
   }, [setWidth, isPortfolio, speed]);
 
   return (
-    <div className="w-full overflow-hidden mt-20">
+    // Center wrapper when portfolio; keep overflow-hidden to clip
+    <div className={`w-full flex overflow-hidden mt-20 ${isPortfolio ? "justify-center items-center" : ""}`}>
       <div
         ref={trackRef}
-        className="flex will-change-transform select-none"
-        style={{ transform: `translateX(${offsetRef.current}px)` }}
+        className={`flex ${isPortfolio ? "flex-col gap-10 items-center" : "flex-row will-change-transform"} select-none`}
+        // When portfolio, disable transform entirely; otherwise move on X
+        style={{ transform: isPortfolio ? "none" : `translateX(${offsetRef.current}px)` }}
       >
         {/* Original set */}
-        <div ref={setRef} className="flex gap-10">
+        <div ref={setRef} className={`flex ${isPortfolio ? "flex-col gap-10 items-center" : "gap-10"}`}>
           {slides.map((src, i) => (
             <img
               key={`a-${i}`}
@@ -80,18 +96,20 @@ export default function Slider({ isPortfolio = false, speed = 200 }) {
           ))}
         </div>
 
-        {/* Duplicate set for seamless looping */}
-        <div className="flex gap-10" aria-hidden="true">
-          {slides.map((src, i) => (
-            <img
-              key={`b-${i}`}
-              src={src}
-              alt={`slide-dup-${i}`}
-              className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[800px] rounded-xl flex-shrink-0 object-cover"
-              draggable={false}
-            />
-          ))}
-        </div>
+        {/* Duplicate set only needed for horizontal looping; omit when portfolio */}
+        {!isPortfolio && (
+          <div className="flex gap-10" aria-hidden="true">
+            {slides.map((src, i) => (
+              <img
+                key={`b-${i}`}
+                src={src}
+                alt={`slide-dup-${i}`}
+                className="w-[300px] sm:w-[400px] md:w-[600px] lg:w-[800px] rounded-xl flex-shrink-0 object-cover"
+                draggable={false}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
