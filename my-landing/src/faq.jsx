@@ -23,7 +23,7 @@ export default function Faq() {
   };
 
   return (
-    <div className="flex flex-col items-center py-12 gap-16 font-manrope">
+    <div className="flex flex-col items-center py-12 gap-16 font-manrope" id="faq">
       <h2 className="text-[2.525rem] sm:text-[3.375rem] tracking-[-0.20rem] text-center leading-[1.1] font-bold">
         Let's answer <br /> your questions
       </h2>

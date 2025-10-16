@@ -9,6 +9,8 @@ import Faq from './faq.jsx';
 import Cta from "./cta.jsx"
 import Footer from "./footer.jsx";
 
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
 
