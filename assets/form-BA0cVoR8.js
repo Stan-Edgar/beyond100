@@ -1,1 +1,0 @@
-import{c as r,j as t,r as e,N as o,S as s,F as a}from"./footer-BUMZE04O.js";r.createRoot(document.getElementById("root")).render(t.jsxs(e.StrictMode,{children:[t.jsx(o,{}),t.jsx(s,{isPortfolio:!0}),t.jsx(a,{})]}));
